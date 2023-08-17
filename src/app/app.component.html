@@ -1,0 +1,16 @@
+<main>
+  <h1>Google GCP to autofill address</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <label for="">Enter the address</label>
+        <!-- <input type="text" id="autocomplete"> -->
+        <input class="form-control"
+        ngx-google-places-autocomplete
+        [options]="options"
+        (onAddressChange)="handleAddressChange($event)" />
+        <button onclick="getValue()">submit</button>
+      </div>
+    </div>
+  </div>
+</main>
